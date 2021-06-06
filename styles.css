@@ -1,0 +1,270 @@
+h1, h2,h3{
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+}
+h1{
+  font-size: 4.5rem;
+}
+h2{
+  margin-bottom: 10%;
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h3{
+
+}
+p{
+  margin-top: 30px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  /* max-width: 80%; */
+}
+a{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+/* Code to setup images to float */
+section{
+  position: relative;
+
+}
+.floating-img{
+  position: absolute;
+}
+.hero-subtitle{
+  margin: 25px 0 35px 0;
+  font-size: 1.25rem;
+}
+#footer p{
+  color: hsl(240, 2%, 79%);
+}
+
+.style-btn{
+  min-width: 130px;
+  margin: 0 5px 0 5px;
+  border-radius: 28px;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  padding: 12px 16px;
+}
+.solid{
+  color: hsl(356, 100%, 66%);
+}
+.hollow{
+
+}
+
+#hero{
+  padding: 4% 0 12%;
+  background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  /* background-image: url("images/bg-pattern-intro.svg"); */
+  color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  border-bottom-left-radius: 100px;
+}
+#hero .floating-img{
+  left: -500px;
+  bottom: -1200px;
+  /* z-index: -1; */
+  /* bottom: -30%; */
+}
+#hero .container{
+  /* Only positioned elements can have z-index applied. So this container is given a relative position. */
+  position: relative;
+
+  z-index: 1;
+}
+#spotlight .container{
+  /* Only positioned elements can have z-index applied. So this container is given a relative position. */
+  position: relative;
+
+  z-index: 1;
+}
+.white{
+  /* padding: 6% 0 10%; */
+  color: hsl(207, 13%, 34%);
+  overflow: hidden;
+}
+#features{
+  padding: 12% 0 22%;
+}
+#features .floating-img{
+  top: 7%;
+  left: 55%;
+}
+#spotlight{
+  padding: 8% 0 8%;
+  background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+#spotlight h2{
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+}
+}
+.extrasectional{
+  height: 0;
+
+}
+.extrasectional-img{
+  position: absolute;
+  z-index: 1;
+  top: -60px;
+  left: 8%;
+}
+#spotlight .floating-img{
+      top: -12%;
+      z-index: 1;
+}
+.floating-bg-img{
+  position: absolute;
+  bottom: -30%;
+  right: 43%;
+}
+#conclusion{
+  padding: 20% 0 20%;
+}
+#conclusion .floating-img{
+  top: 10%;
+  right: 50%;
+}
+#footer{
+  padding: 5% 0 6%;
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(0, 0%, 100%);
+  border-top-right-radius: 100px;
+}
+#footer h6, #footer p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9rem;
+}
+ #footer p{
+   margin-top: 0px;
+   margin-bottom: 10px;
+ }
+ #footer h6{
+   margin-bottom: 30px;
+ }
+.hero-div{
+  margin-top: 8%;
+  text-align: center;
+}
+.text-feature{
+  margin-bottom: 75px;
+}
+
+/* mobile responsiveness */
+
+.responsive-img{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+
+  h3 {
+    font-size: 1.75rem;
+  }
+  /* Hero Section */
+  #hero{
+    padding: 10% 0 40%;
+  }
+  .hero-div {
+    max-width: 80%;
+    margin: 30% auto 0;
+  }
+  h1 {
+    font-size: 2.0rem;
+  }
+  .hero-subtitle {
+
+    font-size: 1.0rem;
+  }
+  .logo-img{
+    width: 70px;
+  }
+  .style-btn{
+    font-size: 0.8rem;
+    min-width: 0;
+  }
+  #hero .floating-img {
+    width: 300%;
+    left: -80%;
+    bottom: -70%;
+
+  }
+
+  #features .container, #spotlight .container, #conclusion .container{
+    max-width: 80%;
+    text-align: center;
+  }
+
+
+
+  /* FEATURES Section */
+  #features {
+    padding: 30% 0 54%;
+  }
+  h2 {
+
+    font-size: 1.5rem;
+  }
+
+  #features .responsive-img{
+    display: block;
+    position: relative;
+    right: 24%;
+  }
+  .desktop-img{
+    display: none;
+  }
+  #features .floating-img {
+    top: 10%;
+    left: -4%;
+  }
+
+  /* SPOTLIGHT SECTION */
+  .floating-bg-img {
+    bottom: 45%;
+    right: -23%;
+    width: 150%;
+  }
+  #spotlight {
+    padding: 58% 0 28%;
+}
+  #spotlight h2{
+    text-align: center;
+    font-size: 2.25rem;
+  }
+
+  /* CONCLUSION SECTION */
+  #conclusion .responsive-img{
+    display: block;
+    position: relative;
+    right: 40%;
+  }
+
+  /* FOOTER SECTION */
+  #footer{
+    padding: 25% 0 15%;
+  }
+  #footer .container{
+    max-width: 40%;
+    text-align: center;
+  }
+  #footer h6{
+    margin-top: 50%;
+  }
+
+
+  .extrasectional-img {
+    top: -180px;
+    left: 6%;
+    width: 90%;
+  }
+}
